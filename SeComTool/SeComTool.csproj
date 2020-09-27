@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DVClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DVClass.Designer.cs">
+      <DependentUpon>DVClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DVUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DVUnits.Designer.cs">
+      <DependentUpon>DVUnits.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DVClass.resx">
+      <DependentUpon>DVClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DVUnits.resx">
+      <DependentUpon>DVUnits.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

@@ -95,6 +95,10 @@
             this.txtobjHex2 = new System.Windows.Forms.TextBox();
             this.txtobjDec2 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deviceVariableUnitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deviceVariableClassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUDPreambles)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -105,6 +109,7 @@
             this.tableLayoutPanel3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblDelimiter
@@ -146,7 +151,7 @@
             this.tableLayoutPanel1.Controls.Add(this.txtCheckSum, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.btnGenerate, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.btnPreview, 1, 7);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 29);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -284,9 +289,9 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.groupBox1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 227);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 248);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(411, 212);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(411, 195);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // groupBox1
@@ -294,7 +299,7 @@
             this.groupBox1.Controls.Add(this.txtTelegramPreview);
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(405, 206);
+            this.groupBox1.Size = new System.Drawing.Size(405, 192);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Telegram Preview:";
@@ -305,7 +310,7 @@
             this.txtTelegramPreview.Multiline = true;
             this.txtTelegramPreview.Name = "txtTelegramPreview";
             this.txtTelegramPreview.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtTelegramPreview.Size = new System.Drawing.Size(396, 181);
+            this.txtTelegramPreview.Size = new System.Drawing.Size(396, 167);
             this.txtTelegramPreview.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -474,7 +479,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.tableLayoutPanel2);
-            this.groupBox2.Location = new System.Drawing.Point(429, 12);
+            this.groupBox2.Location = new System.Drawing.Point(429, 27);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(286, 135);
             this.groupBox2.TabIndex = 4;
@@ -483,7 +488,7 @@
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(635, 416);
+            this.btnCalculate.Location = new System.Drawing.Point(635, 425);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(80, 23);
             this.btnCalculate.TabIndex = 15;
@@ -494,7 +499,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.tableLayoutPanel3);
-            this.groupBox3.Location = new System.Drawing.Point(429, 153);
+            this.groupBox3.Location = new System.Drawing.Point(429, 162);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(286, 138);
             this.groupBox3.TabIndex = 16;
@@ -677,7 +682,7 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.tableLayoutPanel4);
-            this.groupBox4.Location = new System.Drawing.Point(429, 297);
+            this.groupBox4.Location = new System.Drawing.Point(429, 306);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(286, 113);
             this.groupBox4.TabIndex = 17;
@@ -777,17 +782,50 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(430, 421);
+            this.label11.Location = new System.Drawing.Point(432, 430);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(158, 13);
             this.label11.TabIndex = 18;
             this.label11.Text = "GDC: Local: 0x1D, Global: 0x21";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(734, 24);
+            this.menuStrip1.TabIndex = 19;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deviceVariableUnitsToolStripMenuItem,
+            this.deviceVariableClassToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
+            this.fileToolStripMenuItem.Text = "Device Variable";
+            // 
+            // deviceVariableUnitsToolStripMenuItem
+            // 
+            this.deviceVariableUnitsToolStripMenuItem.Name = "deviceVariableUnitsToolStripMenuItem";
+            this.deviceVariableUnitsToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.deviceVariableUnitsToolStripMenuItem.Text = "Device Variable Units";
+            this.deviceVariableUnitsToolStripMenuItem.Click += new System.EventHandler(this.deviceVariableUnitsToolStripMenuItem_Click);
+            // 
+            // deviceVariableClassToolStripMenuItem
+            // 
+            this.deviceVariableClassToolStripMenuItem.Name = "deviceVariableClassToolStripMenuItem";
+            this.deviceVariableClassToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.deviceVariableClassToolStripMenuItem.Text = "Device Variable Class";
+            this.deviceVariableClassToolStripMenuItem.Click += new System.EventHandler(this.deviceVariableClassToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 451);
+            this.ClientSize = new System.Drawing.Size(734, 461);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -795,6 +833,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "SeCom Tool";
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -812,6 +852,8 @@
             this.groupBox4.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -886,6 +928,10 @@
         private System.Windows.Forms.TextBox txtobjHex2;
         private System.Windows.Forms.TextBox txtobjDec2;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deviceVariableUnitsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deviceVariableClassToolStripMenuItem;
     }
 }
 

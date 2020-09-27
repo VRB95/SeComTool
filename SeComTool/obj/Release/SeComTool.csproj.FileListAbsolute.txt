@@ -1,0 +1,11 @@
+C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\bin\Release\SeComTool.exe.config
+C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\bin\Release\SeComTool.exe
+C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\bin\Release\SeComTool.pdb
+C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\obj\Release\SeComTool.csprojAssemblyReference.cache
+C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\obj\Release\SeComTool.DVUnits.resources
+C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\obj\Release\SeComTool.Form1.resources
+C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\obj\Release\SeComTool.Properties.Resources.resources
+C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\obj\Release\SeComTool.csproj.GenerateResource.cache
+C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\obj\Release\SeComTool.exe
+C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\obj\Release\SeComTool.pdb
+C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\obj\Release\SeComTool.DVClass.resources

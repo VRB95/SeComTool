@@ -7,3 +7,5 @@ C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\obj\Debug\SeComTool.Propert
 C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\obj\Debug\SeComTool.csproj.GenerateResource.cache
 C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\obj\Debug\SeComTool.exe
 C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\obj\Debug\SeComTool.pdb
+C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\obj\Debug\SeComTool.DVUnits.resources
+C:\Users\Bogdi\Desktop\SeComTool\SeComTool\SeComTool\obj\Debug\SeComTool.DVClass.resources

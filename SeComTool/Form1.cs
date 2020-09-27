@@ -13,6 +13,7 @@ namespace SeComTool
 {
     public partial class Form1 : Form
     {
+        
         public int preambles = 6;
         public String byteCount = "";
         public String[] hexfloatArray = new String[4];
@@ -34,6 +35,19 @@ namespace SeComTool
             txtFloat8.ReadOnly = true;
             txtobjHex1.ReadOnly = true;
             txtobjDec2.ReadOnly = true;
+
+            // Define the border style of the form to a dialog box.
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+
+            // Set the MaximizeBox to false to remove the maximize box.
+            this.MaximizeBox = false;
+
+            // Set the MinimizeBox to false to remove the minimize box.
+            this.MinimizeBox = false;
+
+            // Set the start position of the form to the center of the screen.
+            this.StartPosition = FormStartPosition.CenterScreen;
+
         }
 
         private void btnGenerate_Click(object sender, EventArgs e)
@@ -499,25 +513,25 @@ namespace SeComTool
         private void txtHex5_KeyPress(object sender, KeyPressEventArgs e)
         {
             wasBackspacePressed = e.KeyChar;
-            if (!HexLetters.Contains(e.KeyChar)) e.Handled = true;
+           // if (!HexLetters.Contains(e.KeyChar)) e.Handled = true;
         }
 
         private void txtHex6_KeyPress(object sender, KeyPressEventArgs e)
         {
             wasBackspacePressed = e.KeyChar;
-            if (!HexLetters.Contains(e.KeyChar)) e.Handled = true;
+           // if (!HexLetters.Contains(e.KeyChar)) e.Handled = true;
         }
 
         private void txtHex7_KeyPress(object sender, KeyPressEventArgs e)
         {
             wasBackspacePressed = e.KeyChar;
-            if (!HexLetters.Contains(e.KeyChar)) e.Handled = true;
+           // if (!HexLetters.Contains(e.KeyChar)) e.Handled = true;
         }
 
         private void txtHex8_KeyPress(object sender, KeyPressEventArgs e)
         {
             wasBackspacePressed = e.KeyChar;
-            if (!HexLetters.Contains(e.KeyChar)) e.Handled = true;
+           // if (!HexLetters.Contains(e.KeyChar)) e.Handled = true;
         }
 
         private void txtHex5_TextChanged(object sender, EventArgs e)
@@ -685,6 +699,18 @@ namespace SeComTool
                 if ((sender as TextBox).Text.IndexOf(e.KeyChar) != -1)
                     e.Handled = true;
             }
+        }
+
+        private void deviceVariableUnitsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form unitsDataGrid = new DVUnits();
+            unitsDataGrid.Show();
+        }
+
+        private void deviceVariableClassToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form classDataGrid = new DVClass();
+            classDataGrid.Show();
         }
     }
 }
